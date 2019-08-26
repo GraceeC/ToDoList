@@ -10,19 +10,23 @@
 
 <body>
 
-<div class="center">
+<div id="myDiv" class="header">
     <h1 class="ToDO">To Do List For The Day</h1>
+    <input type="text" id="input" placeholder="Add New To Do">
+    <span onclick="add()" class="btn">To Do</span>
 
-<input autofocus type="text" placeholder="Enter A New To Do">
 
-<ul class="ToDo-List">
-<li> Gym Session  </li>
-<li> Make protien shake </li>
-<li> Get Mia ready for school </li>
-<li> Work </li>
-<li> Code </li>
+
+<ul id="todo">
+<li> <span> X </span> Gym Session  </li>
+<li> <span> X </span> Make protien shake </li>
+<li> <span> X </span> Get Mia ready for school </li>
+<li> <span> X </span> Work </li>
+<li> <span> X </span> Code </li>
 </ul>
-</div>
 
+<script type ="text/javascript" src="todo.js"></script>
+</div>
+</div>
 </body>
 <html>
