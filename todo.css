@@ -1,4 +1,4 @@
-.center{
+.header{
     border: 5px solid #A9A9A9;
     height:50%;
     width:50%;
@@ -11,21 +11,24 @@ h1{
     color:#A9A9A9;
     text-align:center;
 }
-ul{
-    text-align:50%;
-    list-style-type:none;
+ul li.checked{
+    text-decoration:line-through;
+}
+ul li:nth-child(odd) {
+    background: #f9f9f9;
 }
 
 input[type=text] {
     border: 3px solid color#A9A9A9;
-    border-radius: 4px;
+    border-radius: 0;
     outline:none;
     font-family: 'Open Sans Condensed', sans-serif;
-    margin-bottom: 0em;
+    margin-bottom: center;
     margin-left: 4em;
     margin-right:0 ;
-    padding-left: 10px;  
+    padding-left: 10px; 
     font-size: 25px;
+    text-align:center;
   }
 
   ul{
@@ -40,4 +43,16 @@ input[type=text] {
   li{
       text-indent: 4px;
       color:#A9A9A9;
+  }
+  .btn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    margin:auto;
   }
