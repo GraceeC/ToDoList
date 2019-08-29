@@ -1,9 +1,6 @@
-    function add() {
-    var item =document.getElementById("input").nodeValue;
-    var ul = document.getElementById('todo');
-    var li = document.createElement('li');
-    li.appendChild(document.createTextNode("-" + item));
-    ul.appendChild(li);
-    document.getElementById('input').value="";
-    li.onclick = removeItem;
+function add() {
+var node = document.createElement("li");                 
+var textnode = document.createTextNode("value");        
+node.appendChild(textnode);                              
+document.getElementById("todo").appendChild(node);     
 }
