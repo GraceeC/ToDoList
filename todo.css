@@ -1,58 +1,62 @@
-.header{
-    border: 5px solid #A9A9A9;
+    .border{
+    border: 2px solid #A9A9A9;
     height:50%;
     width:50%;
-    margin: auto;
-    padding:20px;
+    margin:auto;
 
-}
-h1{
+    }
+
+    h1{
     font-family: 'Open Sans Condensed', sans-serif;
     color:#A9A9A9;
     text-align:center;
-}
-ul li.checked{
-    text-decoration:line-through;
-}
-ul li:nth-child(odd) {
-    background: #f9f9f9;
-}
+    font-family: 'Hepta Slab', serif;
+    text-align:center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    }
 
-input[type=text] {
-    border: 3px solid color#A9A9A9;
-    border-radius: 0;
+    ul li.checked{
+    text-decoration:line-through;
+    }
+
+    ul li:nth-child(odd) {
+    background: #f9f9f9;
+    }
+    
+    input{
     outline:none;
+    border-radius: 0;
     font-family: 'Open Sans Condensed', sans-serif;
     margin-bottom: center;
     margin-left: 4em;
     margin-right:0 ;
-    padding-left: 10px; 
+    padding-left: 10px;
     font-size: 25px;
     text-align:center;
-  }
+    width: 100%;
+    }
+    
+    ul{
+    font-family: 'Hepta Slab', serif;
+    text-align:center;
+    list-style-type: none;
+    margin-top: 2em;
+    margin-bottom: 0;
+    margin-left: 1em;
+    margin-right: 85px;
+    padding-left: 85px;
+    }
+    
+    li{
+    text-indent: 4px;
+    color:#A9A9A9;
+    }
 
-  ul{
-  list-style-type: none;
-  margin-top: 2em;
-  margin-bottom: 0;
-  margin-left: 1em;
-  margin-right: 85px;
-  padding-left: 85px;   
-  }
-
-  li{
-      text-indent: 4px;
-      color:#A9A9A9;
-  }
-  .btn {
-    padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 0;
-    margin:auto;
-  }
+    .btn {
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 30%
+    }
