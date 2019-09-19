@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="keywords" content="HTML,CSS,JavaScript">
-  <link rel = "stylesheet" type = "text/css" href = "todo.css">
+  <link rel="stylesheet" type="text/css" href="todo.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
   <title>To Do List</title>
 </head>
 
 <body>
-
-<div id="myDiv" class="header">
+<div id="container">
+<div id="border" class="header">
     <h1 class="ToDO">To Do List For The Day</h1>
-    <input type="text" id="to_input" placeholder="Add New To Do">
-    <span onclick="add()" class="btn">To Do</span>
+            <input type="text" id="toDoInput" placeholder="Add New To Do..">
+            <button onclick="add()" class="btn btn-secondary btn-sm" id="buttonPress">New To Do</button>
 
-
-
-<ul id="todo">
-<li> <span> X </span> Gym Session  </li>
-<li> <span> X </span> Make protien shake </li>
-<li> <span> X </span> Get Mia ready for school </li>
-<li> <span> X </span> Work </li>
-<li> <span> X </span> Code </li>
-</ul>
-
-<script type ="text/javascript" src="todo.js"></script>
+<div id="toDoItems">
+    <ul id="myList">
+      <li>Item</li>
+      <li>Item2</li>
+    </ul>
 </div>
 </div>
+</div>
+
+<script type="text/javascript" src="todo.js"></script> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </div>
 </body>
 <html>
