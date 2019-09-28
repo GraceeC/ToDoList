@@ -1,62 +1,46 @@
-    .border{
-    border: 2px solid #A9A9A9;
-    height:50%;
-    width:50%;
-    margin:auto;
-
-    }
-
-    h1{
-    font-family: 'Open Sans Condensed', sans-serif;
-    color:#A9A9A9;
+h1{
+    color:black;
+    font-family: 'Amiri', serif;
+    margin:0px;
+}
+#container{
+    border-radius: 5px;
+    height:80%;
     text-align:center;
-    font-family: 'Hepta Slab', serif;
-    text-align:center;
-    padding-top: 25px;
-    padding-bottom: 20px;
-    }
-
-    ul li.checked{
-    text-decoration:line-through;
-    }
-
-    ul li:nth-child(odd) {
-    background: #f9f9f9;
-    }
-    
-    input{
-    outline:none;
-    border-radius: 0;
-    font-family: 'Open Sans Condensed', sans-serif;
-    margin-bottom: center;
-    margin-left: 4em;
-    margin-right:0 ;
-    padding-left: 10px;
-    font-size: 25px;
-    text-align:center;
-    width: 100%;
-    }
-    
-    ul{
-    font-family: 'Hepta Slab', serif;
-    text-align:center;
+    padding:50px;
+}
+.inputElement{
+    border-radius: 5px;
+    height:80%;
+    text-align:auto;
+    padding:20px;
+    font-family: 'Amiri', serif;
+}
+.toDoList{
+    border-radius: 5px;
+    height:80%;
+    text-align:auto;
+    padding:15px;
+    font-family: 'Amiri', serif;  
+}
+#inputToDo{
+    margin-top:0px;
+    padding:8px;
+    width:80%;
+    font-size:25px;
+    text-align: center;
+    border-radius:5px;
+    font-family: 'Amiri', serif;
+    border-style:solid;
+    border-block-color: grey;
+}
+ul{
     list-style-type: none;
-    margin-top: 2em;
-    margin-bottom: 0;
-    margin-left: 1em;
-    margin-right: 85px;
-    padding-left: 85px;
-    }
-    
-    li{
-    text-indent: 4px;
-    color:#A9A9A9;
-    }
-
-    .btn {
-    position: absolute;
-    right: 5px;
-    font-size: 30px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    width: 30%
-    }
+}
+#buttonPress{
+    padding:16px 40px;
+    background-color:#C4E8E1;
+    float: right;
+    border-radius:5px;
+    font-family: 'Amiri', serif;
+}
