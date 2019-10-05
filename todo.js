@@ -1,18 +1,20 @@
-//adding a new LI element
+//global scope
+const list = document.getElementById("toDoList");
+
+//cretaing a new li & checkbox element
 function add() {
   const inputToDo = document.getElementById('inputToDo');
   const li = document.createElement("li");
   const textNode = document.createTextNode(inputToDo.value);
-  li.appendChild(textNode);
-  document.getElementById("toDoList").appendChild(li);
+  const list = document.createElement('input');
+  checkbox.type = "checkbox";
+  li.appendChild(textNode,checkbox);
+  document.getElementById("toDoList").appendChild(li, list);
 }
-//creating a new checkbox
-function checkbox(){
-  const inputToDo = document.getElementById('inputToDo');
-  const ul = document.createElement(checkb);
-  const textNode = document.createTextNode(inputToDo.value);
-  ul.appendChild(textNode);
-  document.getElementById("toDoList").appendChild(li);
+//checkbox event listener 
+function checkbox(ev){
+list.addEventListener("cick", "checkbox");
+document.getElementById(toDoList);
 }
 //removing li by checkbox
 function removeLi(){
