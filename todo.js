@@ -6,12 +6,11 @@ function add() {
   const inputToDo = document.getElementById('inputToDo');
   const li = document.createElement("li");
   const textNode = document.createTextNode(inputToDo.value);
-  const list = document.createElement("li");
-  const box = document.createTextNode(checkbox);
-  console.log(box);
+  const box = document.createElement("input");
   box.type = "checkbox";
-  li.appendChild(textNode,checkbox);
-  document.getElementById("toDoList").appendChild(li, list);
+  li.appendChild(box);
+  li.appendChild(textNode);
+  list.appendChild(li);
 }
 
 //checkbox event listener 
@@ -22,7 +21,7 @@ function checkbox(){
 
 //removing li by checkbox
 function removeLi(){
- const removeLi = document.getElementById('toDoList');
+ const removeLi = document.getElementById('toDoList')[""];
  const parent = removeLi.parentNode;
- parent.removeChild(removeLi);
+ parent.removeChild(removeLi[""]);
 }
