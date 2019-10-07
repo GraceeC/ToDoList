@@ -1,20 +1,15 @@
+* {
+    box-sizing: border-box;
+    text-align:center;
+    font-family: 'Amiri', serif;
+}
 h1{
     color:black;
     font-family: 'Amiri', serif;
-    margin:0px;
 }
-#container{
+#inputElement{
     border-radius: 5px;
-    height:80%;
     text-align:center;
-    padding:50px;
-}
-.inputElement{
-    border-radius: 5px;
-    height:80%;
-    text-align:auto;
-    padding:20px;
-    font-family: 'Amiri', serif;
 }
 .toDoList{
     border-radius: 5px;
@@ -22,25 +17,31 @@ h1{
     text-align:auto;
     padding:15px;
     font-family: 'Amiri', serif;  
+    box-sizing: border-box;
 }
 #inputToDo{
     margin-top:0px;
     padding:8px;
-    width:80%;
+    width:85%;
+    height:6%;
     font-size:25px;
     text-align: center;
     border-radius:5px;
     font-family: 'Amiri', serif;
     border-style:solid;
-    border-block-color: grey;
+    border-color: grey;
+    box-sizing: border-box;
 }
 ul{
     list-style-type: none;
 }
+ #checkbox{
+width:5%; 
+}
 #buttonPress{
-    padding:16px 40px;
+    position:fixed;
     background-color:#C4E8E1;
     float: right;
-    border-radius:5px;
     font-family: 'Amiri', serif;
+    height:9%;
 }
