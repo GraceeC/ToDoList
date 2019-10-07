@@ -9,12 +9,16 @@
  <h1>To Do List</h1>
  <div class="inputElement"> 
  <input type=text id="inputToDo" placeholder="Add New To Do..">
- <button onclick="add()" id="buttonPress">New To Do</button>
+ <button onclick="add()" id="buttonPress">
+    New To Do
+ </button>
+ <div id="ulList"> 
  <ul id="toDoList">
- <input type="checkbox" onclick="removeLi()" id="checkbox"/> 
- <li onclick="checkbox()">New Item</li>
+ <li onclick="checkbox()"><input type="checkbox" onclick="removeLi()" id="checkbox"/> New Item</li>
  </ul>
 </div>
-<script type ="text/javascript" src="todo.js"></script>
+</div>
+<script type ="text/javascript" src="todo.js">
+</script>
 </body>
 <html>
