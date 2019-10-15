@@ -1,5 +1,5 @@
 //global scope
-const listElement = document.querySelector("#toDoList");
+const list = document.querySelector("#toDoList");
 //function for a new li & checkbox
 function add() {
   const inputToDo = document.getElementById('inputToDo');
@@ -11,9 +11,12 @@ function add() {
   li.appendChild(textNode);
   listElement.appendChild(li);
 }
+list.addEventListener('click', removeLi) ;{
+  alert('event listner is working!');
 //removing li by checkbox
 function removeLi(){
   const removeLi = document.getElementById('toDoList');
   const parent = removeLi.parentNode;
   parent.removeChild(removeLi);
+}
 }
