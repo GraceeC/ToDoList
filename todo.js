@@ -6,17 +6,20 @@ function add() {
   const li = document.createElement("li");
   const textNode = document.createTextNode(inputToDo.value);
   const box = document.createElement("input");
+  console.log("clicked");
   box.type = "checkbox";
   li.appendChild(box);
   li.appendChild(textNode);
-  listElement.appendChild(li);
+  list.appendChild(li);
 }
+
 list.addEventListener('click', removeLi) ;{
-  alert('event listner is working!');
+  list.removeChild(list.childNodes[0]);
+
 //removing li by checkbox
 function removeLi(){
   const removeLi = document.getElementById('toDoList');
-  const parent = removeLi.parentNode;
+  const parent = removeLi.removeChild;
   parent.removeChild(removeLi);
 }
 }
