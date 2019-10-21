@@ -8,18 +8,16 @@ function add() {
   const box = document.createElement("input");
   console.log("clicked");
   box.type = "checkbox";
+  li.addEventListener('click', removeLi);
   li.appendChild(box);
   li.appendChild(textNode);
   list.appendChild(li);
+  document.getElementById('inputToDo').value="";
 }
-
-list.addEventListener('click', removeLi) ;{
-  list.removeChild(list.childNodes[0]);
 
 //removing li by checkbox
-function removeLi(){
-  const removeLi = document.getElementById('toDoList');
-  const parent = removeLi.removeChild;
-  parent.removeChild(removeLi);
-}
+function removeLi(e){
+  console.log('event target:', e.target);
+  const liElement = e.target.parentNode;
+  list.removeChild(liElement);
 }
