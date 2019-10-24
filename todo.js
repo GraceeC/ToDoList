@@ -14,7 +14,13 @@ function add() {
   list.appendChild(li);
   document.getElementById('inputToDo').value="";
 }
-
+//stopping to do item from being an empty to do item
+function emptyInput(){
+  if (inputToDo.value === " " ){
+alert("are you sure?");
+  }
+ 
+}
 //removing li by checkbox
 function removeLi(e){
   console.log('event target:', e.target);
