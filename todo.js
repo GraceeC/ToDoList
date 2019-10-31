@@ -20,6 +20,7 @@ function add() {
   const btn = document.createElement("input");
   btn.setAttribute("type","checkbox");
   document.body.appendChild(btn);
+  console.log("btn clicked");
   //adding a new checkbox for each item
   li.appendChild(box);
   li.appendChild(textNode);
@@ -34,6 +35,10 @@ function Strike(e) {
   line = document.getElementsByClassName("item");
   console.log("box is clicked");
   e.target.parentNode.style.textDecoration = "line-through";
+}
+ulList.addEventListener("click", removeLi);
+function removeLi(){
+console.log("almost deleting");
 }
 function removeLi(){
 
