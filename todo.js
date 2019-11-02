@@ -3,10 +3,16 @@ const list = document.querySelector("#toDoList");
 // function is ran when a new to do is entered
 function add() {
   //getting input value
-  const inputToDo = document.getElementById("inputToDo");
+  // const inputToDo = document.getElementById("inputToDo");
+  // inputToDo.addEventListener("keyup",function(e){
+  //   if(event.keyCode === 13){
+  //     e.preventDefault();
+  //     document.getElementById("btnEnter").add();
+  //   }
+  // });
   //stopping input from entering an empty to do
   if (inputToDo.value.length === 0)
-  return false;
+    return false;
   //creating a new li
   const li = document.createElement("li");
   console.log("'li' created");
@@ -18,9 +24,9 @@ function add() {
   box.type = "checkbox";
   //btn to delete to do
   const deleteBtn = document.createElement("input");
-  deleteBtn.setAttribute = ("type","button");
+  deleteBtn.setAttribute = ("type", "button");
   deleteBtn.value = 'x';
-  deleteBtn.addEventListener('click', function(e){
+  deleteBtn.addEventListener('click', function (e) {
     console.log("btn clicked");
     li.style = 'display: none;';
   });
