@@ -3,13 +3,13 @@ const list = document.querySelector("#toDoList");
 // function is ran when a new to do is entered
 function add() {
   //getting input value
-  // const inputToDo = document.getElementById("inputToDo");
-  // inputToDo.addEventListener("keyup",function(e){
-  //   if(event.keyCode === 13){
-  //     e.preventDefault();
-  //     document.getElementById("btnEnter").add();
-  //   }
-  // });
+  const inputToDo = document.getElementById("inputToDo");
+  inputToDo.addEventListener("keyup",function(e){
+    if(event.keyCode === 13){
+      e.preventDefault();
+      document.getElementById("btnEnter").click();
+    }
+  });
   //stopping input from entering an empty to do
   if (inputToDo.value.length === 0)
     return false;
