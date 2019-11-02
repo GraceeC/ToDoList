@@ -5,8 +5,8 @@ function add() {
   //getting input value
   const inputToDo = document.getElementById("inputToDo");
   //stopping input from entering an empty to do
-  if (inputToDo.value === " ")
-  return;
+  if (inputToDo.value.length === 0)
+  return false;
   //creating a new li
   const li = document.createElement("li");
   console.log("'li' created");
@@ -17,14 +17,18 @@ function add() {
   console.log("clicked");
   box.type = "checkbox";
   //btn to delete to do
-  const btn = document.createElement("input");
-  btn.setAttribute("type","checkbox");
-  document.body.appendChild(btn);
-  console.log("btn clicked");
+  const deleteBtn = document.createElement("input");
+  deleteBtn.setAttribute = ("type","button");
+  deleteBtn.value = 'x';
+  deleteBtn.addEventListener('click', function(e){
+    console.log("btn clicked");
+    li.style = 'display: none;';
+  });
   //adding a new checkbox for each item
   li.appendChild(box);
-  li.appendChild(textNode);
   ulList.appendChild(li);
+  li.appendChild(textNode);
+  li.appendChild(deleteBtn);
   //clearing input value after item has been submitted
   document.getElementById("inputToDo").value = "";
 }
@@ -35,11 +39,4 @@ function Strike(e) {
   line = document.getElementsByClassName("item");
   console.log("box is clicked");
   e.target.parentNode.style.textDecoration = "line-through";
-}
-ulList.addEventListener("click", removeLi);
-function removeLi(){
-console.log("almost deleting");
-}
-function removeLi(){
-
 }
