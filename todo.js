@@ -1,5 +1,8 @@
-//global scope
+//global scope for to do list
 const list = document.querySelector("#toDoList");
+//global scope for local storage
+const listItems =document.querySelector("#ulList");
+
 // function is ran when a new to do is entered
 function add() {
   //getting input value
@@ -37,6 +40,8 @@ function add() {
   li.appendChild(deleteBtn);
   //clearing input value after item has been submitted
   document.getElementById("inputToDo").value = "";
+  //local storage
+  
 }
 //event listener to strike out item
 ulList.addEventListener("click", Strike);
@@ -45,4 +50,9 @@ function Strike(e) {
   line = document.getElementsByClassName("item");
   console.log("box is clicked");
   e.target.parentNode.style.textDecoration = "line-through";
+}
+function savedData(){
+localStorage.setItem('ulList', 'items');
+const value = localStorage.getItem(ulList);
+console.log(value);
 }
