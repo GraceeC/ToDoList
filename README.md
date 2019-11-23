@@ -19,8 +19,5 @@ Try it out [here](https://graceec.github.io/ToDoList/) on GitHub Pages.
 ## Technical
 
 <img src ="language.png" width="200" height="100">
-#### To Do Application 
-- HTML
-- CSS
-- Javascript
+
 
