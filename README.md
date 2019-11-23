@@ -18,7 +18,7 @@ Try it out [here](https://graceec.github.io/ToDoList/) on GitHub Pages.
 
 ## Technical
 
-
+![](language.png)
 #### To Do Application 
 - HTML
 - CSS
