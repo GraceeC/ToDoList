@@ -18,7 +18,7 @@ Try it out [here](https://graceec.github.io/ToDoList/) on GitHub Pages.
 
 ## Technical
 
-![](language.png) {:height="50%" width="50%"}
+<img src ="language.png" width="100" height="100">
 #### To Do Application 
 - HTML
 - CSS
