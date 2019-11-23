@@ -18,7 +18,7 @@ Try it out [here](https://graceec.github.io/ToDoList/) on GitHub Pages.
 
 ## Technical
 
-![](language.png)
+![](language.png width="400")
 #### To Do Application 
 - HTML
 - CSS
