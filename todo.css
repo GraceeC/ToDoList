@@ -1,12 +1,9 @@
-* {
-  text-align: center;
-  padding-bottom: 10px;
-  font-family: 'Ibarra Real Nova', serif;
- 
-
-}
 #container {
   background-color:#ed6663;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Ibarra Real Nova', serif;
+   
 } 
 h1{
    padding-top:10px ; 
@@ -34,10 +31,35 @@ h1{
   border-style: solid;
   border-color: grey;
   box-sizing: border-box;
+  border-radius:15px;
 }
 ul {
   list-style-type: none;
 }
-#list{
-    background-color:#ed6663;;
+#ulList{
+    color:grey;
+    font-size:25px;
+}
+li{
+  background-color:white;
+  margin-left: auto;
+}
+.inputElement{
+  margin-left:10px;
+}
+#btnEnter{
+  background-color:grey;
+  margin-top:5px;
+  margin-bottom:15px;
+  block-size:45px;
+  border-radius:15px;
+}
+#btn{
+  background-color:white;
+  border-block-color:black;
+  border-block-end-style: solid;
+  border-block-width:10px;
+  width:25px;
+  border-radius:10px;
+  padding-right:2px;
 }
