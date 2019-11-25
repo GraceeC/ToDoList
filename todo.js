@@ -42,23 +42,23 @@ function createListItemElement(inputToDoValue){
    const textNode = document.createTextNode(inputToDoValue);
    li.appendChild(textNode);
   //creating a new checkbox for each to do
+
   const box = document.createElement("input");
   console.log("clicked");
   box.type = "checkbox";
-
   //adding a new checkbox
   li.appendChild(box);
+ //btn to delete to do
+ const deleteBtn = document.createElement("input");
+ deleteBtn.setAttribute = ("type", "button");
+ deleteBtn.value = 'x';
+ deleteBtn.id="btn";
+ deleteBtn.addEventListener('click', function(e){
+   console.log("btn clicked");
+   li.style = 'display: none;';
+ });
+ li.appendChild(deleteBtn);
 
-   //btn to delete to do
-   const deleteBtn = document.createElement("input");
-   deleteBtn.setAttribute = ("type", "button");
-   deleteBtn.value = 'x';
-   deleteBtn.addEventListener('click', function(e){
-     console.log("btn clicked");
-     li.style = 'display: none;';
-   });
-   li.appendChild(deleteBtn);
 
 return li;
-
   }
